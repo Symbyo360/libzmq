@@ -7,6 +7,9 @@ else()
   cmake_minimum_required(VERSION 2.8.12)
 endif()
 
+# cmake --help-policy CMP0077
+cmake_policy(SET CMP0077 NEW)
+
 include(CheckIncludeFiles)
 include(CheckCCompilerFlag)
 include(CheckCXXCompilerFlag)
